@@ -1,2 +1,6 @@
 language: csharp
 solution: TravisCITest.Web.sln
+script:    # the following commands are just examples, use whatever your build process requires
+  - ./build.sh
+  - ./test.sh
+  - grep "Test Results" build.log
